@@ -27,6 +27,7 @@ namespace PingWatcher.Web
             });
 
             services.AddScoped<PingRecorder>();
+            services.AddHostedService<CheckForPingService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
